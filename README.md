@@ -6,7 +6,7 @@ Only tested on Windows 10 and 11, 64-bit
 ## Features
 - Super lightweight and portable
 - Choose your own services to play with
-- Randomization feature (You won't know which port and services are there)
+- Randomization feature (Services and ports are dynamically selected with logs hidden from terminal)
 - Flag submission
 
 ## Requirements
