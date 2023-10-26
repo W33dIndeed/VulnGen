@@ -26,7 +26,7 @@ Rest of the instructions stated in the program
 ## Examples
 ### Main Menu
 ![image](https://github.com/W33dIndeed/VulnGen/assets/73786469/21b6cbac-23bd-47a4-922f-49f086bd5959)
-### Might stuck here or at /boot/initrd)
+### Might stuck here or at /boot/initrd
 Make sure to select/highlight it
 
 ![image](https://github.com/W33dIndeed/VulnGen/assets/73786469/cb0ffe08-ad52-4b30-a08c-9c4094bc39e3)
