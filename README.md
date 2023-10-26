@@ -3,10 +3,17 @@ A Vulnerable Virtual Machine Generator that creates a virtual machine for you to
 
 Only tested on Windows 10 and 11, 64-bit
 
+## Features
+- Super lightweight and portable
+- Choose your own services to play with
+- Randomization feature (You won't know which port and services are there)
+- Flag submission
+
 ## Requirements
 - Python 3
 - Vagrant
 - Oracle VM Virtualbox
+- Internet connection when running
 
 ## Installation
 ### Python 3
