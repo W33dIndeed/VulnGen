@@ -1,5 +1,5 @@
 # VulnGen
-A Vulnerable Virtual Machine Generator that creates a virtual machine for you to practice pen-testing it, could be helpful for your OSCP certification exam.
+A Vulnerable Virtual Machine Generator that uses Vagrant, Python and Oracle VM Virtualbox to create a virtual machine for you to practice pen-testing it, could be helpful for your OSCP certification exam.
 
 Only tested on Windows 10 and 11, 64-bit
 
