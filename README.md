@@ -1,5 +1,5 @@
 # VulnGen
-A Vulnerable Virtual Machine Generator that creates a virtual machine for you to practice pen-testing it.
+A Vulnerable Virtual Machine Generator that creates a virtual machine for you to practice pen-testing it, could be helpful for your OSCP certification exam.
 Only tested on Windows 10 and 11, 64-bit
 
 ## Requirements
@@ -33,3 +33,5 @@ Make sure to select/highlight it
 
 ![image](https://github.com/W33dIndeed/VulnGen/assets/73786469/cb0ffe08-ad52-4b30-a08c-9c4094bc39e3)
 
+## Contribute
+Interested in this concept? Feel free to contribute! Add more vulnerable ports and services, generate more than 1 machines for pivoting, include Windows machines, privilege escalation, etc. The sky's the limit!
