@@ -19,7 +19,7 @@ Download the installers from their respective official websites and install them
 - Set your attacking machine's network adapter on Oracle VM Virtualbox to be Bridged Adapter to ensure its on the same local network as the generated machine
 - Run with the command "python \VulnGen.py" (or the appropriate filename)
 - For the first run, select SMTP for its speed and efficiency
-- If it seems stuck at "default:" portion of the log, make sure to have Oracle VM Virtualbox open and the generated machine selected/highlighted.(Refer to 2nd image in Examples)
+- If it seems stuck at "default:" portion of the log, make sure to have Oracle VM Virtualbox open and the generated machine selected/highlighted. (Refer to 2nd image in Examples)
 
 Rest of the instructions stated in the program
 
