@@ -23,6 +23,8 @@ Download the installers from their respective official websites and install them
 
 Rest of the instructions stated in the program
 
+Step-by-step command answer key provided
+
 ## Examples
 ### Main Menu
 ![image](https://github.com/W33dIndeed/VulnGen/assets/73786469/21b6cbac-23bd-47a4-922f-49f086bd5959)
@@ -30,3 +32,4 @@ Rest of the instructions stated in the program
 Make sure to select/highlight it
 
 ![image](https://github.com/W33dIndeed/VulnGen/assets/73786469/cb0ffe08-ad52-4b30-a08c-9c4094bc39e3)
+
